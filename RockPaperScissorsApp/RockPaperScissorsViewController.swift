@@ -14,6 +14,7 @@ class RockPaperScissorViewController: UIViewController {
     
     // MARK: Outlets
     
+    
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorButton: UIButton!
@@ -54,7 +55,7 @@ class RockPaperScissorViewController: UIViewController {
         if (playersMove == RPS.rock) {
             // Get the storyboard and ResultViewController
             let storyboard = UIStoryboard (name: "Main", bundle: nil)
-            let resultVC = storyboard.instantViewController(withIdentifier: "Result View Controller")as! ResultViewController
+            let resultVC = storyboard.instantiateViewController(withIdentifier: "Result View Controller")as! ResultViewController
             // Communicate the match
             resultVC.match = self.match
             self.present(resultVC, animated: true, completion: nil)
