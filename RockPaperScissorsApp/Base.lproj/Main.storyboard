@@ -10,43 +10,125 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Rock Paper Scissor View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockPaperScissorsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RockPaperScissorViewController" customModule="RockPaperScissorsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-9d-bbI">
-                                <rect key="frame" x="35" y="318" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="paper Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-9d-bbI">
+                                <rect key="frame" x="63" y="300" width="76" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Mfz-qa-5aM"/>
+                                    <constraint firstAttribute="height" constant="75" id="ifJ-bq-fOM"/>
+                                </constraints>
+                                <state key="normal" title="paper Button" image="paper"/>
+                                <connections>
+                                    <segue destination="rj1-xk-oss" kind="presentation" identifier="throwDownPaper" id="SAw-bH-RxL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfw-yN-0Ju">
-                                <rect key="frame" x="244" y="318" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Scissor Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfw-yN-0Ju">
+                                <rect key="frame" x="243" y="301" width="80" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="lOH-fQ-Ggq"/>
+                                    <constraint firstAttribute="width" constant="65" id="mRF-Ln-PKm"/>
+                                </constraints>
+                                <state key="normal" title="Scissor Button" image="scissors"/>
+                                <connections>
+                                    <segue destination="rj1-xk-oss" kind="presentation" identifier="throwDownScissors" id="xfG-2w-XEV"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAZ-2R-n5y">
-                                <rect key="frame" x="166" y="444" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Let's Play " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAZ-2R-n5y">
+                                <rect key="frame" x="149" y="455" width="77" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vur-sF-Lbe">
-                                <rect key="frame" x="143" y="200" width="88" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Rock Button "/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vur-sF-Lbe">
+                                <rect key="frame" x="152" y="169" width="70" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="229-42-wbv"/>
+                                    <constraint firstAttribute="width" constant="65" id="8M2-A7-PBE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="eAH-P0-FN3"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="eZX-96-bD7"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="orV-oy-SoY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="pPz-OD-uti"/>
+                                </constraints>
+                                <state key="normal" title="Rock Button " image="rock"/>
+                                <connections>
+                                    <action selector="makeYourMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uQM-EA-zBe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vur-sF-Lbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="Hoi-ir-gQu"/>
+                            <constraint firstItem="vur-sF-Lbe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="KpB-On-bHL"/>
+                            <constraint firstItem="HAZ-2R-n5y" firstAttribute="top" secondItem="vur-sF-Lbe" secondAttribute="bottom" constant="210" id="LEb-Y3-cx2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vur-sF-Lbe" secondAttribute="trailing" constant="140" id="QTs-yQ-3nI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="paperButton" destination="Lfw-9d-bbI" id="Xpd-b5-Arx"/>
+                        <outlet property="rockButton" destination="vur-sF-Lbe" id="e66-Cz-dT0"/>
+                        <outlet property="scissorButton" destination="xfw-yN-0Ju" id="W8p-qE-dK4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-332" y="8.5457271364317844"/>
+        </scene>
+        <!--ResultViewController-->
+        <scene sceneID="Dg7-2O-Ek5">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" title="ResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rj1-xk-oss" customClass="ResultViewController" customModule="RockPaperScissorsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MjD-pW-jdM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rrQ-hH-5GU">
+                                <rect key="frame" x="67" y="178" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtE-gO-M9r">
+                                <rect key="frame" x="160" y="360" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypm-tF-r0w">
+                                <rect key="frame" x="151" y="407" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgainButtonPressed:" destination="rj1-xk-oss" eventType="touchUpInside" id="I2g-Ib-1Zr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uvN-hF-H66"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="UtE-gO-M9r" id="8Ix-zo-Smx"/>
+                        <outlet property="playAgainButton" destination="ypm-tF-r0w" id="Vgz-wI-ya9"/>
+                        <outlet property="resultImageView" destination="rrQ-hH-5GU" id="Rod-2Y-06e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fpe-XK-z5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.79999999999995" y="8.5457271364317844"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paper" width="75" height="65"/>
+        <image name="rock" width="75" height="65"/>
+        <image name="scissors" width="75" height="65"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SAw-bH-RxL"/>
+    </inferredMetricsTieBreakers>
 </document>

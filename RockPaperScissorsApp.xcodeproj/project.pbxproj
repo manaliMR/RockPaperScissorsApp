@@ -10,9 +10,12 @@
 		D10C7D1B2105384B00710894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C7D1A2105384B00710894 /* AppDelegate.swift */; };
 		D10C7D1D2105384B00710894 /* RockPaperScissorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C7D1C2105384B00710894 /* RockPaperScissorsViewController.swift */; };
 		D10C7D202105384B00710894 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10C7D1E2105384B00710894 /* Main.storyboard */; };
-		D10C7D222105384D00710894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10C7D212105384D00710894 /* Assets.xcassets */; };
+		D10C7D222105384D00710894 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10C7D212105384D00710894 /* Images.xcassets */; };
 		D10C7D252105384D00710894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10C7D232105384D00710894 /* LaunchScreen.storyboard */; };
 		D10C7D302105384D00710894 /* RockPaperScissorsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C7D2F2105384D00710894 /* RockPaperScissorsAppTests.swift */; };
+		D10F3D5221053D6C00D77165 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10F3D5121053D6C00D77165 /* ResultViewController.swift */; };
+		D10F3D5421056A9200D77165 /* RPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10F3D5321056A9200D77165 /* RPS.swift */; };
+		D16D71B321067F4C003365D5 /* RPSMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16D71B221067F4C003365D5 /* RPSMatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +33,15 @@
 		D10C7D1A2105384B00710894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D10C7D1C2105384B00710894 /* RockPaperScissorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsViewController.swift; sourceTree = "<group>"; };
 		D10C7D1F2105384B00710894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D10C7D212105384D00710894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D10C7D212105384D00710894 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D10C7D242105384D00710894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D10C7D262105384D00710894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D10C7D2B2105384D00710894 /* RockPaperScissorsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10C7D2F2105384D00710894 /* RockPaperScissorsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsAppTests.swift; sourceTree = "<group>"; };
 		D10C7D312105384D00710894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10F3D5121053D6C00D77165 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		D10F3D5321056A9200D77165 /* RPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS.swift; sourceTree = "<group>"; };
+		D16D71B221067F4C003365D5 /* RPSMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSMatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +85,11 @@
 			children = (
 				D10C7D1A2105384B00710894 /* AppDelegate.swift */,
 				D10C7D1C2105384B00710894 /* RockPaperScissorsViewController.swift */,
+				D10F3D5121053D6C00D77165 /* ResultViewController.swift */,
+				D10F3D5321056A9200D77165 /* RPS.swift */,
+				D16D71B221067F4C003365D5 /* RPSMatch.swift */,
 				D10C7D1E2105384B00710894 /* Main.storyboard */,
-				D10C7D212105384D00710894 /* Assets.xcassets */,
+				D10C7D212105384D00710894 /* Images.xcassets */,
 				D10C7D232105384D00710894 /* LaunchScreen.storyboard */,
 				D10C7D262105384D00710894 /* Info.plist */,
 			);
@@ -178,7 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10C7D252105384D00710894 /* LaunchScreen.storyboard in Resources */,
-				D10C7D222105384D00710894 /* Assets.xcassets in Resources */,
+				D10C7D222105384D00710894 /* Images.xcassets in Resources */,
 				D10C7D202105384B00710894 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16D71B321067F4C003365D5 /* RPSMatch.swift in Sources */,
 				D10C7D1D2105384B00710894 /* RockPaperScissorsViewController.swift in Sources */,
+				D10F3D5421056A9200D77165 /* RPS.swift in Sources */,
+				D10F3D5221053D6C00D77165 /* ResultViewController.swift in Sources */,
 				D10C7D1B2105384B00710894 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

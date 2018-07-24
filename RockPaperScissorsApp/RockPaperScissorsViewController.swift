@@ -52,15 +52,19 @@ class RockPaperScissorViewController: UIViewController {
         // Here are the 3 ways of presenting a View Controller
         
         // 1st Way: Programmatic View Controller Presentation
+        
         if (playersMove == RPS.rock) {
             // Get the storyboard and ResultViewController
             let storyboard = UIStoryboard (name: "Main", bundle: nil)
             let resultVC = storyboard.instantiateViewController(withIdentifier: "Result View Controller")as! ResultViewController
+        
             // Communicate the match
+            
             resultVC.match = self.match
             self.present(resultVC, animated: true, completion: nil)
         }
             // 2nd Way: Code plus Segue
+        
         else if (playersMove == RPS.paper) {
             performSegue(withIdentifier: "throwDownPaper", sender: self)
         }
