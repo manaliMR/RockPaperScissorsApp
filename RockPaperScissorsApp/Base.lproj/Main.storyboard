@@ -61,6 +61,11 @@
                                     <action selector="makeYourMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uQM-EA-zBe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hj4-xF-gz1" customClass="History">
+                                <rect key="frame" x="162" y="41" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="History"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -145,6 +150,10 @@
                             <outlet property="delegate" destination="Eyk-Zs-15c" id="SdO-Ta-7sP"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="OK" id="dcw-w9-UCB"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6x-AI-Ydv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
