@@ -15,6 +15,7 @@
 		D10C7D302105384D00710894 /* RockPaperScissorsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C7D2F2105384D00710894 /* RockPaperScissorsAppTests.swift */; };
 		D10F3D5221053D6C00D77165 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10F3D5121053D6C00D77165 /* ResultViewController.swift */; };
 		D10F3D5421056A9200D77165 /* RPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10F3D5321056A9200D77165 /* RPS.swift */; };
+		D12FB81B210808560062ECC2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FB81A210808560062ECC2 /* HistoryViewController.swift */; };
 		D16D71B321067F4C003365D5 /* RPSMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16D71B221067F4C003365D5 /* RPSMatch.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		D10C7D312105384D00710894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D10F3D5121053D6C00D77165 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		D10F3D5321056A9200D77165 /* RPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS.swift; sourceTree = "<group>"; };
+		D12FB81A210808560062ECC2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		D16D71B221067F4C003365D5 /* RPSMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSMatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				D10C7D1A2105384B00710894 /* AppDelegate.swift */,
 				D10C7D1C2105384B00710894 /* RockPaperScissorsViewController.swift */,
 				D10F3D5121053D6C00D77165 /* ResultViewController.swift */,
+				D12FB81A210808560062ECC2 /* HistoryViewController.swift */,
 				D10F3D5321056A9200D77165 /* RPS.swift */,
 				D16D71B221067F4C003365D5 /* RPSMatch.swift */,
 				D10C7D1E2105384B00710894 /* Main.storyboard */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D16D71B321067F4C003365D5 /* RPSMatch.swift in Sources */,
+				D12FB81B210808560062ECC2 /* HistoryViewController.swift in Sources */,
 				D10C7D1D2105384B00710894 /* RockPaperScissorsViewController.swift in Sources */,
 				D10F3D5421056A9200D77165 /* RPS.swift in Sources */,
 				D10F3D5221053D6C00D77165 /* ResultViewController.swift in Sources */,

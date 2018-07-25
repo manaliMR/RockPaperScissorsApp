@@ -120,7 +120,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fpe-XK-z5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.79999999999995" y="8.5457271364317844"/>
+            <point key="canvasLocation" x="497" y="9"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="3kA-Qk-1DB">
+            <objects>
+                <tableViewController storyboardIdentifier="History View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Eyk-Zs-15c" customClass="HistoryViewController" customModule="RockPaperScissorsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zye-ei-D2M" customClass="HistoryViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="y2J-zf-BXP">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y2J-zf-BXP" id="KBE-GX-ymj">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Eyk-Zs-15c" id="Xhm-z5-LA2"/>
+                            <outlet property="delegate" destination="Eyk-Zs-15c" id="SdO-Ta-7sP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6x-AI-Ydv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247" y="9"/>
         </scene>
     </scenes>
     <resources>

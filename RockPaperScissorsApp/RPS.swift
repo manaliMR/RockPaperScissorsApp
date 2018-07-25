@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: -RPS: Comparable
 
-enum RPS: Comparable {
+enum RPS {
     case rock, paper, scissor
     
     init() {
@@ -24,23 +24,24 @@ enum RPS: Comparable {
             self = .scissor
         }
     }
-}
 
-// MARK: - RPS (Comparison)
 
-func <(lhs: RPS, rhs: RPS) -> Bool {
+// The defeats method defines the hierarchy of moves, Rock defeats Scissors etc.
+func defeats(_ opponent: RPS) -> Bool {
     
-    switch (lhs, rhs) {
+    switch (self, opponent) {
     case (.rock, .paper), (.paper, .scissor), (.scissor, .rock):
-        return true;
-    default:
         return false;
-    }
+    default:
+        return true;
+      }
+   }
 }
 
 // Mark: - RPS: CustomStringConvertible
 
 extension RPS: CustomStringConvertible {
+   
     var description: String {
         get {
             switch (self) {
@@ -54,3 +55,4 @@ extension RPS: CustomStringConvertible {
         }
     }
 }
+

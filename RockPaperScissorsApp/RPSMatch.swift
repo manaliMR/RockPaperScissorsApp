@@ -16,6 +16,7 @@ struct RPSMatch {
     
     let p1: RPS
     let p2: RPS
+    let date: Date
     
     // MARSK: Initializer
     
