@@ -47,7 +47,7 @@ class RockPaperScissorViewController: UIViewController {
     // MARK: Play!
     func throwDown(_ playersMove: RPS){
         let computersMove = RPS()
-        self.match = RPSMatch(playersMove, computersMove)
+        self.match = RPSMatch(p1: playersMove, p2: computersMove)
         
         // Here are the 3 ways of presenting a View Controller
         

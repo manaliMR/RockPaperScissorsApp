@@ -54,7 +54,7 @@ class ResultViewController: UIViewController {
         return match.winner.description + "  " + victoryModeString(match.winner) + "  " + match.loser.description + ". " + resultString(match)
         }
     func resultString(_ match: RPSMatch) -> String {
-        return match.p1 > match.p2 ? "You Win!" : "You Lose!"
+        return match.p1.defeats(match.p2) ? "You Win!" : "You Lose!"
     }
     
     func victoryModeString(_ gesture: RPS) -> String {
