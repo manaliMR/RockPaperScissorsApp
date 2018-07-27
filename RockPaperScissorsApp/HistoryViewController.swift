@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 // MARK: - HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -44,11 +45,11 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     func victoryStatusDescription(_ match: RPSMatch) -> String {
         
         if (match.p1 == match.p2) {
-            return "Tie."
+            return "It's a Tie."
         } else if (match.p1.defeats(match.p2)) {
-            return "Win!"
+            return "Player1 : Wins, Player2 : losses"
         } else {
-            return "Loss."
+            return "Player1 : Losses, Player2 : Wins"
         }
     }
     
