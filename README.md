@@ -22,4 +22,4 @@ Here the two view controllers are connected using three different types of conne
 
 
 #### Views:
-<img src="/RockPaperScissorsApp/Images.xcassets/AppView.imageset/Screen Shot 2018-07-23 at 9.02.22 PM.png">  <img src="/RockPaperScissorsApp/Images.xcassets/ResultView.imageset/Screen Shot 2018-07-23 at 9.02.40 PM.png">  <img src="/RockPaperScissorsApp/Images.xcassets/HistoryView.imageset/HistoryViewController.png">
+<img src="/RockPaperScissorsApp/Images.xcassets/AppView.imageset/Screen Shot 2018-07-23 at 9.02.22 PM.png">  <img src="/RockPaperScissorsApp/Images.xcassets/ResultView.imageset/Screen Shot 2018-07-23 at 9.02.40 PM.png">  <img src="/RockPaperScissorsApp/Images.xcassets/HistoryImage.imageset/HistoryImage.png">
